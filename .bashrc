@@ -19,5 +19,6 @@ function y() {
 
 PS1='[\u@\h \W]\$ '
 
-eval "$(zoxide init bash)"
+ff
+eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init bash)"

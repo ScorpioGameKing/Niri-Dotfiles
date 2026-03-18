@@ -10,6 +10,4 @@ config.font = wezterm.font 'Agave Nerd Font Mono'
 config.font_size = 12
 config.color_scheme = 'Gruvbox Dark (Gogh)'
 
-config.window_background_opacity = 0.8
-
 return config
