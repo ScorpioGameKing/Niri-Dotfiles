@@ -1,6 +1,6 @@
 {
     "custom/arch": {
-        "format": "󰣇 ",
+        "format": " 󰣇 ",
         "tooltip": false,
         "on-click": "fuzzel"
     },

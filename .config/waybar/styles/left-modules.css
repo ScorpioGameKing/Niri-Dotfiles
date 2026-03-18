@@ -5,7 +5,7 @@
     background-color: @bg-1;
     color: @text;
     margin-left: 2px;
-    margin-right: 2px;
+    margin-right: 4px;
 }
 
 /* Base Button Styling */
@@ -21,11 +21,12 @@ button:hover {
 
 /* Workspace Styling */
 #workspaces {
-    margin: 0px 12px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 #workspaces button {
     font-size: 16px;
-    padding: 0 12px;
+    padding: 0 4px;
     background-color: @bg-1;
     color: @text;
     border-top: 2px solid @borders;

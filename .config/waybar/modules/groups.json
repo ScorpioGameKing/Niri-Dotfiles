@@ -1,0 +1,38 @@
+{
+    "group/leftbar": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/open",
+            "custom/arch",
+            "custom/split",
+            "niri/workspaces",
+            "custom/close"
+        ]
+    },
+
+    "group/centerbar": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/open",
+            "niri/window",
+            "custom/close"
+        ]
+    },
+
+    "group/rightbar": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/open",
+            "backlight",
+            "custom/split", 
+            "network",
+            "custom/split", 
+            "battery",
+            "custom/split", 
+            "clock",
+            "custom/split", 
+            "custom/power",
+            "custom/close"
+        ]
+    }
+}

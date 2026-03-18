@@ -12,5 +12,10 @@
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
-    }
+    },
+    "custom/power": {
+		"format": "󰤄",
+		"on-click": "wezterm -e ~/.config/waybar/scripts/power",
+		"tooltip-format": "Power Menu"
+	}
 }

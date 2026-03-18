@@ -4,6 +4,7 @@
 @import "styles/left-modules.css";
 @import "styles/center-modules.css";
 @import "styles/right-modules.css";
+@import "styles/decorations.css";
 
 /* Margin Fixing for end modules */
 /* If workspaces is the leftmost module, omit left margin */

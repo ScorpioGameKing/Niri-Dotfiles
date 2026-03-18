@@ -21,3 +21,16 @@ window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
+
+// Open Terminals on Terminal Space
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    open-on-workspace "terminals"
+    open-focused true
+}
+
+// Open File Browsers on File Space
+window-rule {
+    match title=r#"Yazi:.*"#
+    open-on-workspace "files"
+}
