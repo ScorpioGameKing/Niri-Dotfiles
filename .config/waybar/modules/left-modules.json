@@ -1,6 +1,6 @@
 {
     "custom/arch": {
-        "format": " 󰣇 ",
+        "format": "󰣇 ",
         "tooltip": false,
         "on-click": "fuzzel"
     },
@@ -11,11 +11,11 @@
         "active-only": true,
         "format": "{icon}",
         "format-icons": {
-            "main": "",
-            "browsers": "󰖟",
-            "files": "",
-            "terminals": "",
-            "default": "󱈹"
+            "main": " ",
+            "browsers": "󰖟 ",
+            "files": " ",
+            "terminals": " ",
+            "default": "󱈹 "
         },
         "on-click": "activate" 
     }

@@ -29,7 +29,8 @@
     margin-left: 8px;
     margin-right: 8px;
 }
-#battery icon {
+#battery.icon {
+    font-size: 16px;
     color: @color-1;
 }
 #battery.charging, #battery.plugged {

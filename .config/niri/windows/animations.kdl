@@ -26,4 +26,9 @@ animations {
         duration-ms 400
         curve "cubic-bezier" 1 0.75 0.5 1
     }
+
+    workspace-switch {
+        duration-ms 200
+        curve "cubic-bezier" 1 0.75 0.5 1
+    }
 }
