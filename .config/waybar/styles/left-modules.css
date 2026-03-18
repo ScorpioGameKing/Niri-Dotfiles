@@ -1,10 +1,11 @@
 /* Fuzzel Launcher Styling */
 #custom-arch {
+    font-size: 24px;
     font-weight: bold;
     background-color: @bg-1;
     color: @text;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 /* Base Button Styling */
@@ -20,10 +21,11 @@ button:hover {
 
 /* Workspace Styling */
 #workspaces {
-    margin: 0px 4px;
+    margin: 0px 0px;
 }
 #workspaces button {
-    padding: 0 5px;
+    font-size: 24px;
+    padding: 0 8px;
     background-color: @bg-1;
     color: @text;
     border-top: 2px solid @borders;
