@@ -1,0 +1,16 @@
+{
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["󰹐", "󱩐", "󱩓", "󱩖", "󰛨"]
+    },
+    "network": {
+        "format": "{essid} {signalStrength}%"
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    }
+}

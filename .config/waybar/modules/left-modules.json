@@ -1,0 +1,21 @@
+{
+    "custom/arch": {
+        "format": "󰣇",
+        "tooltip": false,
+        "on-click": "fuzzel"
+    },
+
+    "niri/workspaces": {
+        "warp-on-scroll": false,
+        "disable-scroll-wraparound": true,
+        "active-only": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "󰖟",
+            "3": "",
+            "4": "",
+            "default": "󱈹"
+        }
+    }
+}

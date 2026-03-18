@@ -1,0 +1,23 @@
+//----------------------------------------------
+// Window Rules Shard
+//----------------------------------------------
+
+// Work around WezTerm's initial configure bug
+// by setting an empty default-column-width.
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+// Disable Screencap on certain Password Managers
+window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    block-out-from "screen-capture"
+}
+
+// Round Window Corners
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}

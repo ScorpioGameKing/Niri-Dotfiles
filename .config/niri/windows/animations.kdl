@@ -1,0 +1,29 @@
+//----------------------------------------------
+// Animation Shard
+//----------------------------------------------
+
+// The wiki explains how to configure individual animations:
+// https://yalter.github.io/niri/Configuration:-Animations
+
+animations {
+    // Uncomment to turn off all animations.
+    // off
+
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+    slowdown 2.0
+
+    window-open {
+        duration-ms 300
+        curve "cubic-bezier" 1 0.75 0.5 1
+    }
+
+    window-close {
+        duration-ms 300
+        curve "cubic-bezier" 1 0.75 0.5 1
+    }
+
+    window-movement {
+        duration-ms 400
+        curve "cubic-bezier" 1 0.75 0.5 1
+    }
+}

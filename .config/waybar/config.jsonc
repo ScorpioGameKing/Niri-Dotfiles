@@ -1,0 +1,23 @@
+{
+    "layer": "top",
+    "height": "64",
+    "spacing": "16",
+    "include": [
+        "~/.config/waybar/modules/left-modules.json",
+        "~/.config/waybar/modules/center-modules.json",
+        "~/.config/waybar/modules/right-modules.json"
+    ],
+    "modules-left": [
+        "custom/arch",
+        "niri/workspaces"
+    ],
+    "modules-center": [
+        "niri/window"
+    ],
+    "modules-right": [
+        "backlight", 
+        "network", 
+        "battery", 
+        "clock"
+    ]
+}
