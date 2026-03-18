@@ -22,15 +22,31 @@ window-rule {
     clip-to-geometry true
 }
 
-// Open Terminals on Terminal Space
+// Open The Rest on Main
 window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    open-on-workspace "terminals"
+    open-on-workspace "main"
     open-focused true
 }
 
-// Open File Browsers on File Space
+// Open Web Browsers on Browser Space
 window-rule {
-    match title=r#"Yazi:.*"#
+    match app-id=r#"brave\-browser"#
+    open-on-workspace "browsers"
+    open-focused true
+    open-maximized true
+}
+
+// Open GUI File Managers on File Space
+window-rule {
+    match app-id=r#"org\.kde\.dolphin"#
     open-on-workspace "files"
+    open-focused true
+    open-maximized true
+}
+
+// Open Terminals, Yazi, etc Terminal Apps on Terminal Space
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"# 
+    open-on-workspace "terminals"
+    open-focused true
 }

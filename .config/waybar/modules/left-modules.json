@@ -12,9 +12,9 @@
         "format": "{icon}",
         "format-icons": {
             "main": " ",
-            "browsers": "󰖟 ",
-            "files": " ",
             "terminals": " ",
+            "files": " ",
+            "browsers": "󰖟 ",
             "default": "󱈹 "
         },
         "on-click": "activate" 

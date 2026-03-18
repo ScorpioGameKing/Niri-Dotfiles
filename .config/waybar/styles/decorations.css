@@ -1,7 +1,7 @@
 /* Decoration Styling */
 
 #custom-open {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     background-color: @bg-1;
     color: @text;
@@ -11,7 +11,7 @@
 }
 
 #custom-close {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     background-color: @bg-1;
     color: @text;
@@ -21,7 +21,7 @@
 }
 
 #custom-split {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     background-color: @bg-1;
     color: @text;

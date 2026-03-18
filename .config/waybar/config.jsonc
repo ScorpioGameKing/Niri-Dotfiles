@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "height": "64",
+    "height": "32",
     "spacing": "8",
     "include": [
         "~/.config/waybar/modules/left-modules.json",

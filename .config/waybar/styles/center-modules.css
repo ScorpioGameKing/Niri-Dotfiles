@@ -1,6 +1,6 @@
 #window {
     font-weight: bold;
-    font-family: "Agave Nerd Mono";
+    font-family: "Agave Nerd Font Mono";
 }
 window#waybar {
     background-color: @bg-1;

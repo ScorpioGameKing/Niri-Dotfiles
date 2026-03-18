@@ -4,9 +4,9 @@
 
 // Create Named Workspaces for Rules
 workspace "main"
-workspace "browsers"
-workspace "files"
 workspace "terminals"
+workspace "files"
+workspace "browsers"
 
 // Include Inital Shards
 include "controls/input.kdl"
