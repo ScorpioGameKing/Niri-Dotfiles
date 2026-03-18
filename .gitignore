@@ -1,4 +1,5 @@
 .config/*
+!.config/starship.toml
 !.config/niri
 !.config/waybar
 !.config/wezterm
