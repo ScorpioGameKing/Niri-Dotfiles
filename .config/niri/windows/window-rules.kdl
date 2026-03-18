@@ -2,6 +2,14 @@
 // Window Rules Shard
 //----------------------------------------------
 
+// Transparency and Rounding For All
+window-rule {
+    opacity 0.95
+    draw-border-with-background false
+    geometry-corner-radius 14
+    clip-to-geometry true
+}
+
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 window-rule {
@@ -16,12 +24,6 @@ window-rule {
     block-out-from "screen-capture"
 }
 
-// Round Window Corners
-window-rule {
-    geometry-corner-radius 12
-    clip-to-geometry true
-}
-
 // Open The Rest on Main
 window-rule {
     open-on-workspace "main"
@@ -34,6 +36,7 @@ window-rule {
     open-on-workspace "browsers"
     open-focused true
     open-maximized true
+    opacity 1.0
 }
 
 // Open GUI File Managers on File Space

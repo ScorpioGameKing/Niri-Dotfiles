@@ -152,9 +152,15 @@ binds {
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Mod+Shift+E     hotkey-overlay-title="<span font='Agave Nerd Font Mono' size='14pt' foreground='#fb4934'><b>Quit</b></span><span font='Agave Nerd Font Mono' size='14pt'>:</span> <span font='Agave Nerd Font Mono' size='14pt' foreground='#83a598'>Niri</span>" { quit; }
-    Ctrl+Alt+Delete hotkey-overlay-title=null { quit; }
+    //Ctrl+Alt+Delete hotkey-overlay-title=null { quit; }
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P hotkey-overlay-title=null { power-off-monitors; }
+}
+
+gestures {
+    hot-corners {
+        off
+    }
 }

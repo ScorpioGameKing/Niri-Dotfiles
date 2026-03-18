@@ -23,6 +23,10 @@
         "orientation": "horizontal",
         "modules": [
             "custom/open",
+            "tray",
+            "custom/split",
+            "wireplumber",
+            "custom/split",
             "backlight",
             "custom/split", 
             "network",

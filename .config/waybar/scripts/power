@@ -13,7 +13,6 @@ main() {
 		"Lock"
 		"Shutdown"
 		"Reboot"
-		"Logout"
 		"Hibernate"
 		"Suspend"
 	)
@@ -34,10 +33,9 @@ main() {
 	selected=$(printf "%s\n" "${list[@]}" | fzf "${options[@]}")
 
 	case $selected in
-		Lock)      loginctl lock-session ;;
+		Lock)      swaylock ;;
 		Shutdown)  systemctl poweroff ;;
 		Reboot)    systemctl reboot ;;
-		Logout)    loginctl terminate-session "$XDG_SESSION_ID" ;;
 		Hibernate) systemctl hibernate ;;
 		Suspend)   systemctl suspend ;;
 		*)         return 1 ;;

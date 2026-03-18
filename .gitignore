@@ -1,3 +1,4 @@
 .config/*
 !.config/niri
 !.config/waybar
+!.config/wezterm
