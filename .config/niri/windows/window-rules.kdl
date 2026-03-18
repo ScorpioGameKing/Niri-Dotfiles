@@ -45,6 +45,7 @@ window-rule {
     open-on-workspace "files"
     open-focused true
     open-maximized true
+    opacity 1.0
 }
 
 // Open Terminals, Yazi, etc Terminal Apps on Terminal Space
