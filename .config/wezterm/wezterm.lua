@@ -10,4 +10,6 @@ config.font = wezterm.font 'Agave Nerd Font Mono'
 config.font_size = 12
 config.color_scheme = 'Gruvbox Dark (Gogh)'
 
+config.window_close_confirmation = 'NeverPrompt'
+
 return config
