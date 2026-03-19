@@ -13,7 +13,6 @@ main() {
 		"Lock"
 		"Shutdown"
 		"Reboot"
-		"Hibernate"
 		"Suspend"
 	)
 
@@ -36,7 +35,6 @@ main() {
 		Lock)      swaylock ;;
 		Shutdown)  systemctl poweroff ;;
 		Reboot)    systemctl reboot ;;
-		Hibernate) systemctl hibernate ;;
 		Suspend)   systemctl suspend ;;
 		*)         return 1 ;;
 	esac
