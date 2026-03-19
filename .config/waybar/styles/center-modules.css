@@ -1,13 +1,19 @@
+
+
+/* Window Title */
 #window {
     font-weight: bold;
-    font-family: "Agave Nerd Font Mono";
-}
-window#waybar {
-    background-color: @bg-1;
     color: @text;
-    transition-property: background-color;
-    transition-duration: .5s;
+    margin-left: 2px;
+    margin-right: 4px;
 }
-window#waybar.hidden {
-    opacity: 0.2;
+
+/* Group Styling */
+#centerbar {
+    font-weight: bold;
+    background-color: @bg-2;
+    border-radius: 10px;
+    color: @text;
+    margin-left: 2px;
+    margin-right: 4px;
 }

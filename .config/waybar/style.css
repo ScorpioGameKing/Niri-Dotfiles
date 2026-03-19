@@ -1,6 +1,7 @@
 /* Import Style Shards */
 @import "styles/theme.css";
 @import "styles/fonts.css";
+@import "styles/window.css";
 @import "styles/left-modules.css";
 @import "styles/center-modules.css";
 @import "styles/right-modules.css";

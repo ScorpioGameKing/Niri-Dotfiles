@@ -1,11 +1,11 @@
 {
     "custom/open": {
-        "format": "[",
+        "format": "(",
         "tooltip": false
     },
 
     "custom/close": {
-        "format": "]",
+        "format": ")",
         "tooltip": false
     },
 
