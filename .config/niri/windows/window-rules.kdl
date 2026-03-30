@@ -25,10 +25,10 @@ window-rule {
 }
 
 // Open The Rest on Main
-window-rule {
-    open-on-workspace "main"
-    open-focused true
-}
+//window-rule {
+//    open-on-workspace "main"
+//    open-focused true
+//}
 
 // Open Web Browsers on Browser Space
 window-rule {

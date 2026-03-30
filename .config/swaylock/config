@@ -1,0 +1,15 @@
+ignore-empty-password
+daemonize
+image=~/Pictures/Backgrounds/gruvy-night.jpg
+disable-caps-lock-text
+indicator-thickness=8
+inside-color=#fe8019
+inside-clear-color=#ebdbb2
+inside-ver-color=#8ec07c
+inside-wrong-color=#fb4934
+ring-color=#458588
+ring-clear-color=#ebdbb2
+ring-ver-color=#689d6a
+ring-wrong-color=#cc241d
+key-hi-color=#b8bb26
+

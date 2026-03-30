@@ -35,7 +35,7 @@
     },
     "custom/power": {
 		"format": "󰤄",
-		"on-click": "wezterm -e ~/.config/waybar/scripts/power",
+		"on-click": "quickshell -n -p .config/quickshell/PowerMenu/shell.qml ",
 		"tooltip-format": "Power Menu"
 	}
 }
