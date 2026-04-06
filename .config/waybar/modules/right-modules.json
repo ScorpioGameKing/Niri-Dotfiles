@@ -31,7 +31,8 @@
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}"
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%d-%m-%Y}"
     },
     "custom/power": {
 		"format": "󰤄",

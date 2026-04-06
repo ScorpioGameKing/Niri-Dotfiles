@@ -54,3 +54,21 @@ window-rule {
     open-on-workspace "terminals"
     open-focused true
 }
+
+window-rule {
+    match app-id="HytaleClient"
+    opacity 1.0
+}
+
+layer-rule {
+    match namespace="mpvpaper"
+    place-within-backdrop true
+}
+layout {
+    background-color "transparent"
+}
+overview {
+    workspace-shadow {
+        off
+    }
+}
