@@ -13,7 +13,7 @@ binds {
     Mod+D       hotkey-overlay-title="<span font='Agave Nerd Font Mono' size='14pt' foreground='#fabd2f'><b>Open File Manager</b></span><span font='Agave Nerd Font Mono' size='14pt'>:</span> <span font='Agave Nerd Font Mono' size='14pt' foreground='#83a598'>Dolphin</span>" { spawn "dolphin"; }
     Mod+B       hotkey-overlay-title="<span font='Agave Nerd Font Mono' size='14pt' foreground='#fabd2f'><b>Open Browser</b></span><span font='Agave Nerd Font Mono' size='14pt'>:</span> <span font='Agave Nerd Font Mono' size='14pt' foreground='#83a598'>Brave</span>"    { spawn "brave"; }
     Mod+Space   hotkey-overlay-title="<span font='Agave Nerd Font Mono' size='14pt' foreground='#fabd2f'><b>Run  Application</b></span><span font='Agave Nerd Font Mono' size='14pt'>:</span> <span font='Agave Nerd Font Mono' size='14pt' foreground='#83a598'>fuzzel</span>" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="<span font='Agave Nerd Font Mono' size='14pt' foreground='#fb4934'><b>Lock Screen</b></span><span font='Agave Nerd Font Mono' size='14pt'>:</span> <span font='Agave Nerd Font Mono' size='14pt' foreground='#83a598'>swaylock</span>"  { spawn "swaylock"; }
+    Super+Alt+L hotkey-overlay-title="<span font='Agave Nerd Font Mono' size='14pt' foreground='#fb4934'><b>Lock Screen</b></span><span font='Agave Nerd Font Mono' size='14pt'>:</span> <span font='Agave Nerd Font Mono' size='14pt' foreground='#83a598'>swaylock</span>"  { spawn "sh" "-c" "~/.config/quickshell/PowerMenu/screenlock.sh"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }

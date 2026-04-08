@@ -17,7 +17,7 @@ Rectangle {
             text: "Power Menu"
             Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
         }
-        MenuButton { buttonText: "Lock PC"; buttonCommand: ["swaylock"]; Layout.alignment: Qt.AlignHCenter }
+        MenuButton { buttonText: "Lock PC"; buttonCommand: ["sh", "-c", "~/.config/quickshell/PowerMenu/screenlock.sh"]; Layout.alignment: Qt.AlignHCenter }
         MenuButton { buttonText: "Shutdown"; buttonCommand: ["systemctl", "poweroff"];  Layout.alignment: Qt.AlignHCenter }
         MenuButton { buttonText: "Reboot"; buttonCommand: ["systemctl", "reboot"];  Layout.alignment: Qt.AlignHCenter }
         MenuButton { buttonText: "Logout"; buttonCommand: ["niri", "msg", "action", "quit"];  Layout.alignment: Qt.AlignHCenter }

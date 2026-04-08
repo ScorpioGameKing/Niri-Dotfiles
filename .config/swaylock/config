@@ -1,6 +1,6 @@
 ignore-empty-password
 daemonize
-image=~/Pictures/Backgrounds/gruvy-night.jpg
+image=~/Pictures/Backgrounds/Static/gruvy-night.jpg
 disable-caps-lock-text
 indicator-thickness=8
 inside-color=#fe8019
