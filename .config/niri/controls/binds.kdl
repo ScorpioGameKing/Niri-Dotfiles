@@ -2,6 +2,12 @@
 // Keybind Shard
 //----------------------------------------------
 
+recent-windows { 
+    binds {
+        
+    } 
+}
+
 binds {
     
     // Pull up overlay
