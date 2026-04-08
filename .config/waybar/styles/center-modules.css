@@ -13,6 +13,7 @@
     font-weight: bold;
     background-color: @bg-2;
     border-radius: 10px;
+    border: 2px solid @color-3;
     color: @text;
     margin-left: 2px;
     margin-right: 4px;
