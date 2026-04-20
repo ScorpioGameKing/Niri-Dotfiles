@@ -11,9 +11,9 @@
         "scroll-step": 5
     },
     "wireplumber": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{source_volume}% ",
+        "format": "{volume}% {icon}",
+        //"format-muted": " {format_source}",
+        //"format-source": "{source_volume}% ",
         "format-source-muted": " ",
         "format-icons": {
             "default": ["", "", ""]
