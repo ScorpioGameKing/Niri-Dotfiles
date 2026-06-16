@@ -48,9 +48,21 @@ window-rule {
     opacity 1.0
 }
 
+// WHY DOES NIRI HATE DOING THIS WITH Title. Still can't find a way to have
+// Yazi open on the files workspace because the Terminal is a catch all
+
+window-rule {
+    match title=r#"Yazi.*"#
+    open-on-workspace "files"
+    open-focused true
+    open-maximized true
+    opacity 1.0
+}
+
 // Open Terminals, Yazi, etc Terminal Apps on Terminal Space
 window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"# 
+    exclude title=r#"Yazi.*"#
     open-on-workspace "terminals"
     open-focused true
 }
