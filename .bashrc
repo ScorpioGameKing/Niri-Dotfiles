@@ -5,6 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Path Additions
+#export PATH="$PATH:~/Programs/AsciiTextWall"
+
 alias ls='eza -TRaL 1 --icons=always --color=auto --group-directories-first'
 alias grep='grep --color=auto'
 alias ff='clear && fastfetch'
