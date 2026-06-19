@@ -4,7 +4,7 @@
 
 // Transparency and Rounding For All
 window-rule {
-    opacity 0.95
+    opacity 0.90
     draw-border-with-background false
     geometry-corner-radius 14
     clip-to-geometry true
@@ -78,7 +78,7 @@ window-rule {
 }
 
 layer-rule {
-    match namespace="mpvpaper"
+    match namespace="wallpaper"
     place-within-backdrop true
 }
 layout {
