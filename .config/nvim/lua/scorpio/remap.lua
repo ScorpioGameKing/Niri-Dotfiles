@@ -30,32 +30,42 @@ vim.keymap.set("n", "<C-p>", function() harpoon:list():select(4) end)
 vim.keymap.set("n", "<C-S-J>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-S-K>", function() harpoon:list():next() end)
 
+-- Visual group move
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Keep things centered
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- Non-Destructive Pasting from buffer
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
--- next greatest remap ever : asbjornHaland
+-- next greatest remap ever : asbjornHaland (yank to and from system clipboard)
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
+-- Void delete
 vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d")
 
+-- Prime says it's bad so I'm not messing with it rn
 vim.keymap.set("n", "Q", "<nop>")
 
+-- More centered movements
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
+-- Misc (Search and replace, Make executable)
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- LSP Binds
+vim.keymap.set('n', "<leader>lf", vim.lsp.buf.format)
 
 -- Add Keys to open splits from Harpoon
 harpoon:extend({
