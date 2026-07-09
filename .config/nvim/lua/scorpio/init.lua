@@ -24,6 +24,9 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "120"
 
 vim.o.winborder = 'rounded'
+vim.o.autocomplete = true
+vim.o.complete = ".,w,b,o"
+vim.opt.completeopt = { "menuone", "noselect", "fuzzy" }
 
 -- Remember Fold States
 vim.api.nvim_create_autocmd({"BufWinLeave"}, {
@@ -31,6 +34,7 @@ vim.api.nvim_create_autocmd({"BufWinLeave"}, {
   desc = "save view (folds), when closing file",
   command = "mkview",
 })
+
 vim.api.nvim_create_autocmd({"BufWinEnter"}, {
   pattern = {"*.*"},
   desc = "load view (folds), when opening file",
