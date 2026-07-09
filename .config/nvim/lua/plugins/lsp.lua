@@ -3,7 +3,7 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
         vim.lsp.enable({
-                "ruff", 
+                "basedpyright", 
                 "lua_ls",
                 "bashls",
                 "gopls"

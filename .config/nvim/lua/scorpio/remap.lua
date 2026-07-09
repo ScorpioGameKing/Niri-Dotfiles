@@ -9,7 +9,7 @@ harpoon:setup()
 vim.g.mapleader = " "
 
 -- Python go brr
-vim.keymap.set("n", "<leader>ps", ":! source env/bin/activate<CR>")
+vim.keymap.set("n", "<leader>ps", ":! source ./env/bin/activate<CR>")
 
 -- Quick move to the explorer
 vim.keymap.set("n", "<leader>lk", vim.cmd.Ex)
@@ -72,6 +72,26 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- LSP Binds
 vim.keymap.set('n', "<leader>lf", vim.lsp.buf.format)
+
+-- Hover Info
+vim.keymap.set('n', 'cc', function() 
+  vim.lsp.buf.hover { border = 'rounded', max_height = 25, max_width = 120 } 
+end, { desc = "Code Docs" })
+
+-- Check Errors
+vim.keymap.set('n', 'ce', function()
+  vim.diagnostic.open_float { border = 'rounded', max_height = 25, max_width = 120  }
+end, { desc = "Code Errors" })
+
+-- Check Next
+vim.keymap.set('n', 'cn', function()
+  vim.diagnostic.jump { count = 1, float = true, border = 'rounded', max_height = 25, max_width = 120  }
+end, { desc = "Code Errors" })
+
+-- Check Previous
+vim.keymap.set('n', 'cb', function()
+  vim.diagnostic.jump { count = -1, float = true, border = 'rounded', max_height = 25, max_width = 120  }
+end, { desc = "Code Errors" })
 
 -- Add Keys to open splits from Harpoon
 harpoon:extend({
