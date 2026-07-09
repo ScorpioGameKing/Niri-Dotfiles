@@ -77,6 +77,16 @@ window-rule {
     opacity 1.0
 }
 
+window-rule {
+    match app-id="openmw"
+    opacity 1.0
+}
+
+window-rule {
+    match app-id="steam_app_250900"
+    opacity 1.0
+}
+
 layer-rule {
     match namespace="wallpaper"
     place-within-backdrop true

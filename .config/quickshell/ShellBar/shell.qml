@@ -3,8 +3,8 @@ import QtQuick
 
 PanelWindow {
     anchors.top: true
-    anchors.left: true
-    anchors.right: true
+    anchors.left: false 
+    anchors.right: false 
     implicitHeight: 30
-    color: "#282828"
+    color: "#FFFFFF"
 }

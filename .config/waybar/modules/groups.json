@@ -27,6 +27,8 @@
             "custom/open",
             "tray",
             "custom/split",
+            "bluetooth",
+            "custom/split",
             "wireplumber",
             "custom/split",
             "backlight",

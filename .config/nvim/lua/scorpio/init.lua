@@ -2,9 +2,9 @@ require("scorpio.remap")
 
 vim.opt.undofile = true
 vim.opt.expandtab = true      -- Use spaces instead of tabs
-vim.opt.tabstop = 4           -- Display width of a tab character
-vim.opt.shiftwidth = 4        -- Number of spaces for one indent level
-vim.opt.softtabstop = 4       -- Backspace deletes this many spaces at a time   
+vim.opt.tabstop = 2           -- Display width of a tab character
+vim.opt.shiftwidth = 2        -- Number of spaces for one indent level
+vim.opt.softtabstop = 2       -- Backspace deletes this many spaces at a time   
 
 vim.opt.wrap = false
 vim.opt.swapfile = false
@@ -16,6 +16,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
+vim.g.have_nerd_font = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")

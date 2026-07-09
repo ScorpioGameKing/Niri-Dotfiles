@@ -8,8 +8,14 @@ harpoon:setup()
 -- Set the leader Key
 vim.g.mapleader = " "
 
+-- Python go brr
+vim.keymap.set("n", "<leader>ps", ":! source env/bin/activate<CR>")
+
 -- Quick move to the explorer
 vim.keymap.set("n", "<leader>lk", vim.cmd.Ex)
+
+-- Insert escape
+vim.keymap.set("i", "jk", "<Esc>", { noremap = false })
 
 -- Telescope Binds
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })

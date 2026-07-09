@@ -2,6 +2,7 @@
 
 format = """
 [](color_orange)\
+$nix_shell\
 $os\
 $username\
 [](bg:color_yellow fg:color_orange)\
@@ -42,6 +43,9 @@ color_orange = '#d65d0e'
 color_purple = '#b16286'
 color_red = '#cc241d'
 color_yellow = '#d79921'
+
+[nix_shell]
+style = "bg:color_orange fg:color_fg0"
 
 [os]
 disabled = false
