@@ -28,10 +28,6 @@ vim.o.autocomplete = true
 vim.o.complete = ".,w,b,o"
 vim.opt.completeopt = { "menuone", "noselect", "fuzzy" }
 
-vim.o.foldmethod = "marker"
-vim.o.foldenable = true
-vim.o.foldlevelstart = 0
-
 -- Remember Fold States
 vim.api.nvim_create_autocmd({"BufWinLeave"}, {
   pattern = {"*.*"},
