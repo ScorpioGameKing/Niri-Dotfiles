@@ -1,4 +1,5 @@
 require("scorpio.remap")
+require("scorpio.netrw")
 
 vim.opt.undofile = true
 vim.opt.expandtab = true      -- Use spaces instead of tabs
