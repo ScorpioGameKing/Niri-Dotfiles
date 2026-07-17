@@ -5,7 +5,6 @@
 // Create Named Workspaces for Rules
 workspace "main"
 workspace "terminals"
-workspace "files"
 workspace "browsers"
 
 // Include Inital Shards

@@ -25,10 +25,10 @@ window-rule {
 }
 
 // Open The Rest on Main
-//window-rule {
-//    open-on-workspace "main"
-//    open-focused true
-//}
+window-rule {
+    open-on-workspace "main"
+    open-focused true
+}
 
 // Open Web Browsers on Browser Space
 window-rule {
@@ -39,25 +39,6 @@ window-rule {
     opacity 1.0
 }
 
-// Open GUI File Managers on File Space
-window-rule {
-    match app-id=r#"org\.kde\.dolphin"#
-    open-on-workspace "files"
-    open-focused true
-    open-maximized true
-    opacity 1.0
-}
-
-// WHY DOES NIRI HATE DOING THIS WITH Title. Still can't find a way to have
-// Yazi open on the files workspace because the Terminal is a catch all
-
-window-rule {
-    match title=r#"Yazi.*"#
-    open-on-workspace "files"
-    open-focused true
-    open-maximized true
-}
-
 // Open Terminals, Yazi, etc Terminal Apps on Terminal Space
 window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"# 
@@ -66,6 +47,7 @@ window-rule {
     open-focused true
 }
 
+// Opacity rules for games and such
 window-rule {
     match app-id="HytaleClient"
     opacity 1.0
@@ -86,6 +68,7 @@ window-rule {
     opacity 1.0
 }
 
+// Wallpaper tweaks
 layer-rule {
     match namespace="wallpaper"
     place-within-backdrop true
