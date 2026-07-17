@@ -32,7 +32,6 @@ autocmd("filetype", {
 		bind("h", "-^") -- go up
 		bind("l", "<CR>") -- open file or dir
 		bind(".", "gh") -- toggle dotfiles
-		bind("<leader>dd", ":Lexplore<CR>") -- close if open
 
 		-- Marks
 		bind("<TAB>", "mf") -- toggle mark
