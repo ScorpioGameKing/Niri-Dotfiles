@@ -146,10 +146,10 @@ binds {
     Mod+W hotkey-overlay-title=null { toggle-column-tabbed-display; }
 
     // Screenshots
-    Print      hotkey-overlay-title=null { screenshot; }
-    Ctrl+Print hotkey-overlay-title=null { screenshot-screen; }
-    Alt+Print  hotkey-overlay-title=null { screenshot-window; }
-
+    Mod+p      hotkey-overlay-title=null { screenshot; }
+    Mod+Ctrl+P hotkey-overlay-title=null { screenshot-screen; }
+    Mod+Alt+P  hotkey-overlay-title=null { screenshot-window; }
+    
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
     // so they may, for example, forward the key presses as-is to a remote machine.
@@ -162,7 +162,7 @@ binds {
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
-    Mod+Shift+P hotkey-overlay-title=null { power-off-monitors; }
+    //Mod+Shift+P hotkey-overlay-title=null { power-off-monitors; }
 
     Mod+Shift+Ctrl+Left { move-window-to-monitor-left; }
 }
