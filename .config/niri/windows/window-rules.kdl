@@ -33,7 +33,7 @@ window-rule {
 // Open Web Browsers on Browser Space
 window-rule {
     match app-id=r#"brave\-browser"#
-    open-on-workspace "browsers"
+    //open-on-workspace "browsers"
     open-focused true
     open-maximized true
     opacity 1.0
