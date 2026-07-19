@@ -1,15 +1,25 @@
+-- Bring in our wonderful configs
 local wezterm = require 'wezterm'
+local themes = require 'themes'
+local general = require 'general'
+local fonts = require 'fonts'
+local keybinds = require 'keybinds'
 
-local config = {}
+-- Create a config to config
+local config = wezterm.config_builder()
 
-config.initial_cols = 120
-config.initial_rows = 28
+-- Set up our defaults
+general.set_defaults(config)
 
-config.font = wezterm.font 'Agave Nerd Font Mono'
+-- Add our defined themes to the config and set
+themes.build_themes(config)
+config.color_scheme = 'gruvbox_material_dark_hard'
 
-config.font_size = 12
-config.color_scheme = 'Gruvbox Dark (Gogh)'
+-- Set up our fonts
+fonts.font_settings(config)
 
-config.window_close_confirmation = 'NeverPrompt'
+-- Set the sick binds
+keybinds.set_keybinds(config)
 
 return config
+
